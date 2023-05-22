@@ -26,7 +26,6 @@ body {
 .container {
   width: 375px;
   height: 667px;
-  border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,6 +36,8 @@ body {
   height: 611px;
   background-color: var(--pure-white);
   border-radius: 10px;
+  background-image: url(./resources/perfume\ mob.svg);
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -66,15 +67,26 @@ button {
   height: 48px;
   background-color: var(--deep-aquamarine);
   border-radius: 8px;
+  font-family: "Montserrat";
+  color: var(--pure-white);
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  background-image: url(./resources/Shape.svg);
+  background-position: 29% 50%;
+  background-repeat: no-repeat;
 }
 
 .information {
   padding: 15px 24px 24px 24px;
+  margin-top: 240px;
 }
 
 .perfume {
+  background-image: url(./resources/perfume\ mob.svg);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  box-shadow: 0px 3px 5px 0px rgba(8, 70, 94, 0.504835);
 }
 
 .top {
@@ -101,4 +113,55 @@ button {
   justify-content: center;
   align-items: center;
   margin-left: 19px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1440px;
+    height: 800px;
+  }
+
+  .item {
+    width: 600px;
+    height: 450px;
+    background-image: url(./resources/perfume\ desk.svg);
+    background-repeat: no-repeat;
+    display: flex;
+  }
+
+  .perfume {
+    /* display: none; */
+  }
+
+  .information {
+    width: 300px;
+    height: 450px;
+    margin: auto;
+    margin-left: 307px;
+    margin-top: 15px;
+  }
+
+  .top {
+    margin-bottom: 20px;
+  }
+
+  .description {
+    margin-top: 24px;
+    margin-bottom: 29px;
+  }
+
+  .pay {
+    margin-bottom: 25px;
+  }
+
+  button {
+    width: 236px;
+    height: 48px;
+    background-position: 23% 50%;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: var(--hover-deep-aquamarine);
+  }
 }
